@@ -1,0 +1,421 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #fff;
+    background-color: #2D3139;
+    font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo", sans-serif;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* 共通 */
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+main {
+    margin-bottom: 160px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    width: 10%;
+}
+
+nav ul li a {
+    color: #fff;
+}
+
+nav ul li a:hover {
+    color: #E55329;
+}
+
+.section__title {
+    font-size: 4.65rem;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.section__title span {
+    color: #FFC3B4;
+    display: block;
+    font-size: 1.25rem;
+    width: 120px;
+    height: 20px;
+    padding: 30px 0;
+}
+
+/* ヘッダー */
+
+#header {
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* メインビジュアル */
+
+.mv__container {
+    width: 100%;
+    height: 800px;
+    background-image: url(https://picsum.photos/200/300);
+    background-size: cover;
+    position: relative;
+}
+
+
+
+.mv__title {
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    font-size: 5.25rem;
+    color: #fff;
+}
+
+/* 募集 */
+
+.search {
+    background-color: #1B1D22;
+    padding: 40px 0;
+  
+}
+
+.search__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.search__box p {
+    font-size: 1.25rem;
+    padding: 0 40px;
+}
+
+.search__bg {
+    background-color: #2D3139;
+}
+
+.search__sex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.search__sex2,
+.search__sex1 {
+    padding: 20px;
+}
+
+.search__sex {
+    position: relative;
+}
+
+.search__sex>span {
+    display: block;
+    border-left: 1px solid #fff;
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    left: 50%;
+}
+
+.search__box select {
+    color: #1B1D22;
+    padding: 20px 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 0 20px;
+}
+
+.search2 {
+    width: 30%;
+}
+
+.search2__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+}
+
+/* アバウト */
+
+.about {
+    padding: 160px 0 60px;
+}
+
+
+
+.about__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.about__flex-inner {
+    width: 50%;
+}
+
+.about__flex-inner h3 {
+    font-size: 1.75rem;
+    margin-bottom: 30px;
+}
+
+.about__flex-inner p {
+    line-height: 2;
+    font-size: 1.15rem;
+}
+
+/* メニュー */
+
+.menu {
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/bg_about.b949bb17.jpg);
+    background-size: cover;
+    background-position: center center;
+    object-fit: cover;
+    vertical-align: bottom;
+    position: relative;
+}
+
+.menu__list {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: -100px;
+}
+
+.menu__list li {
+    width: 33%;
+    background-color: #1B1D22;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.menu__img {
+    padding: 20px;
+    width: 60px;
+    height: 60px;
+    margin: 30px auto;
+    background-color: #33446C;
+    border-radius: 50%;
+}
+
+.menu__list li {
+    position: relative;
+}
+
+/* ワーク */
+
+.work {
+    padding: 120px 0 60px;
+}
+
+.bg__img {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.bg__img img {
+    width: 50%;
+    height: 700px;
+    object-fit: cover;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.list__inner {
+    width: 60%;
+    height: 700px;
+    background-color: #fff;
+    position: absolute;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    right: 0;
+    top: 100px;
+}
+
+.work__list {
+    width: 600px;
+    height: 400px;
+    margin: 150px auto;
+}
+
+.work__list li:not(:first-child) {
+    padding-top: 30px;
+}
+
+.work__list li:not(:last-child) {
+    border-bottom: #33446C 1px solid;
+}
+
+.work__list li a {
+    position: relative;
+    color: #1B1D22;
+}
+
+
+.work__list li h3 {
+    margin-bottom: 30px;
+    font-size: 1.75rem;
+}
+
+.work__list li p {
+    margin-bottom: 30px;
+}
+
+/* インタビュー */
+
+.interview {
+    padding: 120px 0 60px;
+}
+
+.interview h2 {
+    margin-bottom: 60px;
+}
+
+.interview__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.interview__text {
+    width: 60%;
+}
+
+/* メディア */
+
+.media {
+    width: 1430px;
+    height: 900px;
+    background-color: #4A505F;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+
+.container {
+    padding: 40px 0 0 130px;
+}
+ 
+.media .title__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 質問 */
+
+.qa__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 0;
+}
+
+.qa__box {
+    width: 70%;
+}
+
+/* コンタクト */
+
+.contact__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    background-color: #4A505F;
+    border-radius: 20px;
+    margin-bottom: 120px;
+}
+
+.contact__box span {
+    background-image: url(../img/external_link_white.d34264c4.svg);
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin-left: 5px;
+}
+
+/* フッター */
+
+#footer {
+    padding: 120px 0;
+    background-color: #1B1D22;
+}
+
+.footer__navi {
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 20px;
+}
+
+.footer__navi p {
+    font-weight: normal;
+    padding: 20px 0;
+}
+
+.sns__list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sns__list li img {
+    display: inline-block;
+    padding: 0 10px;
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.footer__copy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #4A505F;
+    padding-top: 30px;
+}
+
+
+
+
+
+
+
+
+

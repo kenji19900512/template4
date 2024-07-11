@@ -1,0 +1,355 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 900px) {
+    /* 共通 */
+
+    .wrapper {
+        width: 100%;
+    }
+
+    main {
+        margin-bottom: 80px;
+    }
+
+    .btn {
+        padding: 10px;
+        margin-top: 0;
+    }
+
+    .btn::after {
+        right: 10px;
+    }
+
+    .section__title {
+        font-size: 2.65rem;
+        margin-bottom: 10px;
+        margin-bottom: 40px;
+    }
+
+    .section__title span {
+        font-size: 1rem;
+        height: 10px;
+        padding: 10px 0;
+    }
+
+
+
+    /* ヘッダー */
+
+    #header {
+        padding: 30px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        width: 100%;
+    }
+
+
+    /* メインビジュアル */
+
+    .mv__container {
+        height: 400px;
+    }
+
+    .mv__title {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2.25rem;
+    }
+
+    /* 募集 */
+
+    .search {
+        margin: 60px 0;
+    }
+
+    .search__box {
+        flex-direction: column;
+    }
+
+    .search__box p {
+        padding: 0 20px;
+        margin-bottom: 10px;
+    }
+
+    .search__sex {
+        padding: 0 10px;
+        margin-bottom: 10px;
+    }
+
+    .search__sex2,
+    .search__sex1 {
+        padding: 10px;
+    }
+
+    .search__box select {
+        margin: 0 20px 10px;
+    }
+
+    .search2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .search2__box {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* アバウト */
+
+    .about {
+        padding: 80px 0;
+    }
+
+
+
+    .about__flex {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .about__flex-inner {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .about__flex-inner h3 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .about__flex-inner p {
+        line-height: 1.6;
+        font-size: 0.825rem;
+        margin-bottom: 40px;
+    }
+
+    /* メニュー */
+
+    .menu {
+        margin: 80px 0;
+    }
+
+    .menu__list {
+        display: grid;
+        grid-template-columns: 48% 48%;
+        gap: 10px;
+    }
+
+    .menu__list li {
+        width: 100%;
+        margin-left: -10px;
+    }
+
+    .menu__img {
+        width: 40px;
+        height: 40px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+
+    .menu__img img {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .menu__list li p::after {
+        display: none;
+    }
+
+    /* ワーク */
+
+    .work {
+        padding: 0;
+        margin: 160px 0 0;
+    }
+
+    .bg__img {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .bg__img img {
+        width: 95%;
+        height: 450px;
+    }
+
+    .list__inner {
+        width: 95%;
+        height: auto;
+        left: 5%;
+        padding: 10px 30px;
+    }
+
+    .work__list {
+        width: 100%;
+        height: auto;
+        margin: 30px auto;
+    }
+
+    .work__list li:not(:first-child) {
+        padding-top: 10px;
+    }
+
+    .work__list li h3 {
+        margin-bottom: 10px;
+        font-size: 1rem;
+    }
+
+    .work__list li p {
+        width: 70%;
+        margin-bottom: 10px;
+        font-size: 0.625rem;
+    }
+
+    .work__list li p::after {
+        width: 12px;
+        height: 12px;
+        bottom: 0;
+    }
+
+    .work__list li a::after {
+        display: none;
+    }
+
+    /* インタビュー */
+
+    .interview {
+        margin: 0 0 80px;
+    }
+
+    .interview h2 {
+        margin-bottom: 60px;
+        margin-left: 20px;
+    }
+
+    .interview__inner {
+        flex-direction: column;
+        padding: 0 30px;
+    }
+
+    .interview__text {
+        width: 100%;
+        letter-spacing: 0.05em;
+    }
+
+    .interview .btn__box {
+        width: 100%;
+    }
+
+    .interview .btn:nth-child(1) {
+        margin-bottom: 10px;
+    }
+
+    /* メディア */
+
+    .media {
+        width: 95%;
+        height: 450px;
+    }
+
+
+    .container {
+        padding: 30px 10px;
+    }
+
+    .media .title__box {
+        flex-direction: column;
+    }
+
+
+    /* 質問 */
+
+    .qa__inner {
+        flex-direction: column;
+        padding: 120px 0;
+    }
+
+    .qa__box {
+        width: 100%;
+    }
+
+    .qa__inner .btn__box {
+        margin: 30px auto 0;
+        width: 85%;
+    }
+
+    /*アコーディオンタイトル*/
+    .accordion-area .title {
+        font-size: 0.625rem;
+    }
+
+    /*アイコンの＋と×*/
+    .accordion-area .title::before,
+    .accordion-area .title::after {
+        width: 8px;
+        height: 1px;
+    }
+
+
+
+    /*アコーディオンで現れるエリア*/
+    .box {
+        font-size: 0.625rem;
+    }
+
+
+    /* コンタクト */
+
+    .contact__box {
+        width: 95%;
+        flex-direction: column;
+        padding: 20px 40px;
+        margin-bottom: 0;
+        margin: 0 auto;
+    }
+
+    /* フッター */
+
+    #footer {
+        padding: 80px 0 20px;
+    }
+
+    .footer__navi {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .footer__navi li {
+        text-align: center;
+        margin: 0 0 30px;
+        font-size: 1.25rem;
+    }
+
+    .footer__navi li a {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .footer__navi p {
+        font-weight: normal;
+        padding: 0;
+        font-size: 0.825rem;
+        text-align: center;
+    }
+
+    .footer__link small {
+        display: block;
+
+    }
+
+    .footer__link small:first-child {
+        margin-bottom: 10px;
+    }
+
+    .footer__copy {
+        padding: 20px 10px;
+    }
+}
